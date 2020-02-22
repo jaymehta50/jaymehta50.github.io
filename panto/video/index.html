@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Addenbrooke's Pantomime: Wizard of Obs</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://www.addies-panto.co.uk/css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="http://www.addies-panto.co.uk/css/grid.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="http://www.addies-panto.co.uk/css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="http://www.addies-panto.co.uk/css/form.css" type="text/css" media="screen">
+	<link rel="shortcut icon" href="http://www.addies-panto.co.uk/favicon.ico"/>
+	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+	<!--[if IE]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<style>
+			.menu {
+    				background-color:#216920;
+			}
+		</style>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="menu" style="position:initial;background-color:#216920;">
+		<div class="container clearfix">
+
+			<div id="logo" class="grid_3">
+                <a href="http://www.addies-panto.co.uk"><img src="http://www.addies-panto.co.uk/images/obs/logo_banner.png" class="button" data-slide="1" alt="WoO Logo" title="WoO Logo" /></a>
+			</div>
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<a href="http://www.addies-panto.co.uk"><li data-slide="1">Home</li></a>
+					<a href="http://www.addies-panto.co.uk/tickets"><li data-slide="1">Tickets</li></a>
+					<a href="http://www.addies-panto.co.uk/committee"><li data-slide="1">Committee</li></a>
+					<a href="http://www.addies-panto.co.uk/pastpantos"><li data-slide="1">Past Pantomimes</li></a>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+    
+
+	<div class="slide" id="slide_form" style="padding:0;">
+		<br /><div id="ytplayer"></div><br />
+	</div>
+
+
+
+    <div class="slide" id="footer">
+        <div class="container clearfix">
+            <div class="grid_6">
+                <p>&#169; Addenbrooke's Charity Pantomime 2015<br />Please contact <a href="mailto:producer@addies-panto.co.uk">producer@addies-panto.co.uk</a> with any enquiries.</p>
+            </div>
+            
+            <div class="grid_6 omega">
+                <p>Addenbrooke's Pantomime<br />
+                    University of Cambridge School of Clinical Medicine<br />
+                    Box 111 Cambridge Biomedical Campus<br />
+                    Cambridge<br />
+                    CB2 0SP</p>
+            </div>        
+        </div>    
+    </div>
+
+    <script>
+    	var swidth = 560;
+    	var sheight = 315;
+
+    	if ((screen.width >= 2400) && (screen.height >= 1350)) {
+    		swidth = 1920;
+    		sheight = 1080;
+    	} else if ((screen.width >= 1600) && (screen.height >= 900)) {
+    		swidth = 1280;
+    		sheight = 720;
+    	} else if ((screen.width >= 1066) && (screen.height >= 600)) {
+    		swidth = 853;
+    		sheight = 480;
+    	} else if ((screen.width >= 800) && (screen.height >= 450)) {
+    		swidth = 640;
+    		sheight = 360;
+    	} else if ((screen.width >= 700) && (screen.height >= 393)) {
+    		swidth = 560;
+    		sheight = 315;
+    	} else {
+    		swidth = 480;
+    		sheight = 270;
+    	}
+
+	  // Load the IFrame Player API code asynchronously.
+	  var tag = document.createElement('script');
+	  tag.src = "https://www.youtube.com/player_api";
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	  // Replace the 'ytplayer' element with an <iframe> and
+	  // YouTube player after the API code downloads.
+	  var player;
+	  function onYouTubePlayerAPIReady() {
+	    player = new YT.Player('ytplayer', {
+	      height: sheight,
+	      width: swidth,
+	      videoId: 'DCYDVwHjEKs',
+	      playerVars: {
+			'autohide': 1,
+			'autoplay': 1,
+			'loop': 0,
+			'modestbranding': 1,
+			'origin': 'addies-panto.co.uk',
+			'rel': 0,
+			'showinfo': 0
+		  }
+	    });
+	    $("#ytplayer").css('margin-left','auto').css('margin-right','auto').css('display','block');
+	  }
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<?php //<script type="text/javascript" src="http://www.addies-panto.co.uk/js/jquery.stellar.min.js"></script> ?>
+	<script type="text/javascript" src="http://www.addies-panto.co.uk/js/waypoints.min.js"></script>
+	<script type="text/javascript" src="http://www.addies-panto.co.uk/js/jquery.easing.1.3.js"></script>
+	<?php //<script type="text/javascript" src="http://www.addies-panto.co.uk/js/scripts.js"></script> ?>
+	<script type="text/javascript" src="http://www.addies-panto.co.uk/js/form_script.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53908666-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+</body>
+</html>

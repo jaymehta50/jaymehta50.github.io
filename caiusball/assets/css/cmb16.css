@@ -1,0 +1,197 @@
+@font-face {
+    font-family: FootlightMtLight;
+    src: url('http://www.caiusball.co.uk/assets/fonts/footlightmtlight.ttf');
+}
+div.textcontent {
+  margin-top: 50px;
+}
+img.sponsorpic {
+  width:100%;
+  border-radius: 10px;
+  background-color:#ffffff;
+  box-shadow: 5px 5px 5px #1F1F1F;
+  padding: 4px;
+}
+img#logo {
+  width: 100%;
+}
+div#committee {
+  padding-top: 50px;
+}
+nav.navbar {
+  border: none;
+  min-height: 60px;
+}
+img.oldscrollresp {
+  max-height: 80vh;
+  max-width: 80vw;
+  position: fixed;
+  bottom: 15vh;
+  right: 50%;
+  margin-right: -277.5px;
+  z-index: 2;
+}
+img.logopic {
+  text-align: center;
+  width: 75%;
+  z-index: 2;
+}
+img.smokepic {
+  /*opacity: 0.2;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+img#bgpic {
+  width:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+img#linespic {
+  width:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -4;
+  display: none;
+}
+div.vertalign {
+  display: table;
+}
+div.vertalign > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+div.horzalign {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.committee h3 {
+  margin-top: 10px;
+}
+div.committee > div.row > div {
+  margin-bottom: 18px;
+}
+a {
+  color: #ffb521;
+}
+div#navbar>ul>li img {
+  height: 45px;
+}
+div#navbar>ul>li>a {
+  padding: 0;
+}
+div#navbar>ul>li>a>img:hover {
+  opacity: 0.6;
+}
+@media (max-aspect-ratio: 3/4) {
+  body {
+    background-image: url('http://www.caiusball.co.uk/assets/images/bg/webback1.1@0,33x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  img#bgpic, img#linespic {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  div.strip {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  img.smokepic {
+    display: none;
+  }
+  div.firststrip {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  div.firststrip > div.container.fillview, div.firststrip > div.container.fillview > div.row, div.firststrip > div.container.fillview > div.row > div {
+    min-height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  /*Smaller than mobile*/
+  div#navbar > ul > li {
+    background-image: url('http://www.caiusball.co.uk/assets/images/menu/mobile/bg2.png');
+    background-size: auto 100%;
+    background-position: 50% 0;
+  }
+  div#navbar > ul > li.firstli {
+    background-image: url('http://www.caiusball.co.uk/assets/images/menu/mobile/bgtop2.png');
+    padding-top:10px;
+  }
+  div#navbar > ul > li.lastli {
+    background-image: url('http://www.caiusball.co.uk/assets/images/menu/mobile/bgbottom2.png');
+    padding-bottom: 10px;
+  }
+  nav.navbar-inverse {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.95+40,0.6+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.95) 40%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.95) 40%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.95) 40%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+  }
+}
+@media (min-width: 768px) {
+  /*Bigger than mobile*/
+  div#navbar>ul>li img {
+    height: 40px;
+  }
+  div#navbar {
+    background-image: url('http://www.caiusball.co.uk/assets/images/menu/bg.png');
+    background-repeat: repeat-x;
+    background-size: contain;"
+  }
+  div#navbar>ul>li>a {
+    padding: 0;
+    float: left;
+  }
+  nav.navbar.navbar-fixed-top {
+    bottom: -40px;
+    top: initial;
+  }
+  ul.nav.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    float: none;
+  }
+
+  div.strip {
+    padding-top: 50px;
+  }
+
+  nav.navbar-inverse {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.95+40,0+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+}
+@media (min-width:992px) {
+  div.strip {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  div.container.fillview, div.container.fillview > div.row, div.container.fillview > div.row > div {
+    min-height: 100vh;
+  }
+  img.smokepic {
+    top: 0;
+  }
+  img.logopic {
+    position: absolute;
+    top: 40px;
+    left: 12.5%;
+    width: 75%;
+  }
+}

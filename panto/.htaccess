@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^panto\.soc\.srcf\.net$ [NC]
+RewriteRule ^(.*)$ http://www.addies-panto.co.uk/$1 [L,R=301]

@@ -1,0 +1,67 @@
+#slide_form{
+	background-color:#216920;
+	color:#ffffff;
+    padding: 140px 0 0 0;
+}
+
+.error {
+    background-color: #A30000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+#slide_form label {
+    text-align:right;
+    font-size: 1em;
+}
+
+#slide_form #audition {
+    margin-bottom: 1.5em;
+    text-align:center;
+}
+
+#slide_form #audition select {
+    margin: 0 auto 0 auto;
+    display:block;
+}
+
+#slide_form #instrumentdiv label {
+    text-align:center;
+    font-size: 1em;
+}
+
+#slide_form #instrumentdiv p {
+    margin: 0;
+}
+
+#slide_form input {
+    margin:1em 0;
+    padding:4px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#slide_form #instrumentdiv input {
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#slide_form label {
+    text-align:center;
+    font-size: 1em;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#slide_form label {
+    text-align:center;
+    font-size: 1em;
+}
+
+
+}

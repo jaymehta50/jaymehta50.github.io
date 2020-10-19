@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RFL Streams Splash</title>
+<meta name="author" content="Jay Mehta">
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<noscript>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</noscript>
+<!-- Stylesheet
+    ================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Aclonica|Happy+Monkey" rel="stylesheet">
+<!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="row" id="apple">
+    <div class="col-sm-12">
+      <h1>Streams</h1>
+      <p>We have detected that you are on an Apple iOS Device.</p>
+      <p>To install Streams on this device, click the link below:</p>
+      <a href="https://royalfree.streams.com/download"><button>Download Streams</button></a>
+    </div>
+  </div>
+  <div id="nonapple">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Streams</h1>
+        <p>We have detected that you are not using an Apple iOS Device.</p>
+        <p>Unfortunately, Streams is currently only available to download on iPhone.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>To download Streams, scan this QR code using your iPhone:</p>
+        <img src="img/streams.png" class="img-responsive" />
+      </div>
+      <div class="col-sm-6">
+        <p>To request a free iPhone SE loan from the Royal Free, click the link below:</p>
+        <a href="https://royalfreelondon.freshservice.com/support/catalog/items/161"><button>Request iPhone</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  function iOS() {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  }
+
+  if (iOS()) {
+    $("#apple").show();
+    $("#nonapple").hide();
+  }
+  else {
+    $("#apple").hide();
+    $("#nonapple").show();
+  }
+});
+</script>
+</body>
+</html>

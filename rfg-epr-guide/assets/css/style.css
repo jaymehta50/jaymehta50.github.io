@@ -1,0 +1,143 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.icon-block {
+  padding: 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.brand-logo > img {
+	height: 56px;
+}
+
+@media only screen and (min-width: 601px) {
+	.brand-logo > img {
+		height: 64px;
+	}
+}
+
+div.spa-section {
+	width: 100%;
+	min-height: 75vh;
+	display: none;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+div.spa-section.spa-active {
+	display: block;
+}
+
+.card .card-image img.rolecards {
+	width: initial;
+    max-height: 300px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card .card-reveal button.card-title {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+table.golivetable th, table.golivetable td {
+	min-height: 59px;
+}
+
+div.appinstallprompt {
+	width: 100%;
+    height: 84px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    justify-content: space-around;
+    z-index: 2;
+    display: none;
+}
+
+nav.stylewithinstallprompt {
+	top: 84px;
+    position: relative;
+}
+
+div#iosinstallmodal.modal .modal-content {
+	padding-bottom: 0;
+}
+
+div.section.readinesscards div.card-image {
+	padding-top: 10px;
+}
+
+footer.page-footer a {
+	color: #ffffff;
+}
+
+ul#nav-mobile {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+}
+
+footer.page-footer {
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+
+div#iphonexnotchbar {
+    height: env(safe-area-inset-top);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav.headernav {
+    top: env(safe-area-inset-top);
+    position: relative;
+}
+
+nav.breadcrumbnav {
+    min-height: 42px;
+    line-height: 42px;
+    padding: 0 16px;
+    height: initial;
+}
+
+a.breadcrumb {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.btn.ssca {
+	min-height: 36px;
+    height: auto;
+    letter-spacing: initial;
+    line-height: 24px;
+    padding: 6px 16px;
+}
+
+div.section.sscq {
+	display: none;
+}
+
+div.section.sscq.sscq-active {
+	display: block;
+}
+
+span.ssctext {
+    font-weight: 500;
+}
